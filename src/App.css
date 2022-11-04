@@ -1,38 +1,291 @@
-.App {
+section {
+  height: 100vh;
+  width: 100%;
+  margin-top: -1.8%;
+  /* border: 1px solid black; */
+  padding-left: 3%;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Home {
+  background-color: white;
+}
+.About {
+ background-color: rgb(255, 251, 251);
+ 
+}
+
+.About>div{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+.Skills {
+  background-color: white;
+  text-align: center;
+
+}
+
+.Project {   background-color: rgb(255, 251, 251);
+  text-align: center;
+  height: auto;
+}
+
+.Contact {
+
+  text-align: center;
+  background-color:white;
+}
+
+.item {
+  /* border: 1px solid rgb(199, 6, 38); */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.item > div {
+  font-family: "Playfair Display", Georgia, serif;
+   line-height: 10px;
+   font-size: 30px;
+  width: 480px;
+  font-weight: 600;
+  margin-top: 13%;
+  /* border: 1px solid rgb(12, 134, 79); */
+}
+
+.nameDesign{
+  font-size: 40px;
+  line-height: 90%;
+}
+
+.fullstackName {
+  margin-top: 2%;
+  font-size: 16px;
+  color: rgb(125, 124, 124);
+}
+
+.btnResume, .buttonFormSubmit {
+  font-size: 13px !important;
+  font-weight: 400;
+ text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  color: white;
+ background-color:  #ca82f8;
+border: 1px solid #ca82f8;
+
+}
+
+.btnResume:hover,
+.btnResume:focus,
+.btnResume:active,
+.buttonFormSubmit:hover,
+.buttonFormSubmit:focus
+{
+
+  background:  transparent;
+  color: #4d4d4d;
+}
+
+
+.About>h1, .Skills>h1, .Project>h1, .Contact>h1{
+  margin-top: 3%;
+  margin-bottom: 5%;
+   font-size: 40px;
+}
+
+.About>h1{
+  text-align: center  ;
+}
+
+.aboutsecondSection>p{
+  color: rgb(125, 124, 124);;
+  margin: auto;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 0%;
+}
+
+.aboutContactSEction{
+  color: rgb(70, 70, 70);;
+  display: flex;
+  width: 50%;
+  margin: auto;
+margin-left: 0%;
+  /* border: 1px solid red; */
+}
+
+.mainAbbout{
+  font-size: 18px;
+  margin-top: 4%;
+  /* border: 1px solid rgb(0, 255, 115); */
+}
+
+.aboutsecondSection{
+  width: 60%;
+  /* border: 1px solid rgb(0, 255, 115); */
+}
+
+
+.About>div>img{
+height: 330px;
+width: 270px;
+margin-top: -2%;
+margin-left: 2%;
+}
+
+/* <----------------------------------Skills css start-----------------------------------------> */
+
+.skillsSection{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 80%;
+  gap:10px;
+  /* margin-top: 2%; */
+  margin: auto;
+}
+
+.skillsSection>div>img{
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.skillsSection>div>p{
+margin-top: 2px;
+color: rgb(125, 124, 124);
+}
+
+.skillsSection>div{
+  width: 130px;
+      height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  /* <-------------------------------------------skils end--------------------------------> */
+  /* <-------------------------------------------project start--------------------------------> */
+.projectContainer{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 18px 8px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.projectContainer>div>img{
+  height: 250px;
+  width: 350px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.projectContainer>div>div{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.projectContainer>p:first-child{
+font-size: 17px; 
+}
+.aboutProject{
+padding: 16px 4px 2px 2px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.projectGrid{
+  width:100%;
+  margin: auto;
+  margin-top: -2%;
+  margin-left: -2%;
+  /* border: 1px solid rgb(12, 176, 108); */
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+gap: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projectBtns{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+.projectBtns>a{
+  padding: 3px 45px;
+  border:1px solid #ca82f8;
+  background-color: #ca82f8;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.githubStats{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4%;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.githubName{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color:black;
 }
+
+.githubActivity{
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 18px;
+  border:1.5px solid #ca82f8;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+}
+  /* <-------------------------------------------project end--------------------------------> */
+.contactContainer{
+  width: 90%;
+  margin: auto;
+  /* border:1px solid #df0b78; */
+  display: flex;
+  gap: 20px;
+}
+
+.contactContainer>div:first-child{
+  text-align: left;
+ width: 30%;
+ /* border:1.5px solid #0d61b5; */
+}
+
+.formContainer{
+  width: 70%;
+ 
+}
+
+.msg>textarea{
+width: 100%;
+
+}
+
+.nameEmail{
+margin-top: 4%;
+  /* border:1.5px solid #12bc75; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+
+}
+
+.nameEmail>div{
+width: 48%;
+height: 45px;
+}
+
+.nameEmail>div>input{
+  height: 100%;
+  }
+  .buttonFormSubmit{
+  margin-left: -80%;
+  }
