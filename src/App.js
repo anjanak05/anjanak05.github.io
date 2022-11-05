@@ -82,26 +82,7 @@ function App() {
       .then((res) => alert("Mail Sent"));
   }
 
-  // const [nameData, setNameData] = useState()
-  // const [emailData, setEmailData] = useState()
-  // const [msgData, setMsgData] = useState()
 
-  // console.log(nameData, emailData,msgData)
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   let data={
-  //     from_name:nameData,
-  //     from_email:emailData,
-  //     message:msgData
-  //   }
-  //   emailjs.sendForm('service_y95eg08', 'template_1vi5fys',data, 'GiaB7EGjDy8SXY52g')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // }
   return (
     <main className="Home" id="home">
       <Navbar className="stickyNavbar"></Navbar>
@@ -193,6 +174,7 @@ function App() {
 
       <section id="skills" className="Skills">
         <h1>Skills</h1>
+       
         <div className="skillsSection">
           {skillsData.map((e) => (
             <div>
@@ -247,7 +229,7 @@ function App() {
         </div>
         <h4 className="githubName">Github Activity </h4>
         <div className="githubActivity">
-          <GitHubCalendar
+          <GitHubCalendar  
             username="anjanak05"
             color="#ca82f8"
             year={new Date().getFullYear()}
@@ -346,6 +328,7 @@ function App() {
           </div>
         </div>
       </section>
+    
     </main>
   );
 }
